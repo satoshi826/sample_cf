@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sample-photo",
+  "main": "backend/index.ts",
+  "compatibility_date": "2025-05-31",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sample-db",
+      "database_id": "4ecac5fd-02f0-455d-8c56-3382eaa0e4c8",
+      "migrations_dir": "./backend/db/migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "bucket_name": "storage",
+      "binding": "storage"
+    }
+  ],
+  "assets": {
+    "directory": "dist",
+    "not_found_handling": "single-page-application"
+  },
+  "observability": {
+    "enabled": true
+  },
+}

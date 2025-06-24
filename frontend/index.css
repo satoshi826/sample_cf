@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #121212;
+    --surface: #1e1e1e;
+    --surface-lighter: #2d2d2d;
+    --text: #e0e0e0;
+    --primary: #3b82f6;
+    --border: #444444;
+  }
+}
+
+body {
+  /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+  font-family: "Kosugi Maru", "Arial", "メイリオ";
+  touch-action: none;
+  color: var(--text);
+  background-color: var(--background);
+}
